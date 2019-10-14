@@ -1,0 +1,26 @@
+1. D
+2. B
+3.  int bankBalace = 500;
+    bankBalace = bankBalace + 250;
+    bankBalace = bankBalace - 100;
+    System.out.println(bankBalace);
+4. B
+5.  int day = 8;
+    String month = "June";
+6.      String firstName = "Dariusz";
+        String lastName = "Czajkowski";
+        String fullName = firstName + " " + lastName;
+        int fullNameLetterLength = firstName.length() + lastName.length();
+        System.out.println("Hello, my name is " + fullName);
+        System.out.println("There are " + fullNameLetterLength + " letters in my name" );
+7.  double fahrenheit = 50;
+    double celsius ;
+    celsius = fahrenheit-32;
+    celsius = celsius * 5;
+    celsius = celsius / 9;
+    System.out.println(celsius)        ;
+7.  other version shorter
+    double fahrenheit = 50;
+    double celsius;
+    celsius = (fahrenheit-32) *5 / 9;
+    System.out.println(celsius);
