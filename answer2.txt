@@ -1,0 +1,99 @@
+1.  C
+2.  I guess you like cats more
+3.     
+    boolean canSeePlayer ;      
+    boolean playerPoweredUp ;
+
+        
+         if (canSeePlayer) {
+            if (!playerPoweredUp) {
+                System.out.println("Attack!");
+            } else {
+                    System.out.println("Run away!");
+                }
+         } else {
+                System.out.println("Wander.");
+            }   
+
+
+4.  boolean isSnowing = false;
+    boolean isRaining = true;
+    double temperature = 60.0;
+
+    if ( isSnowing || isRaining || temperature<50){
+        System.out.println("let's stay home");
+    }else  {
+        System.out.println("Let's go out!");
+    }
+
+    //TODO: print "Let’s stay home." if its raining, snowing or
+    //below 50 degrees and print "Let’s go out!" otherwise.
+
+5.  int time = 18;
+    String timeOfDay;
+
+    if (time >=5 && time <12 ){
+        timeOfDay = "morning";
+    } else if (time >=12 && time < 20){
+        timeOfDay = "daytime";
+    } else {
+        timeOfDay = "night";
+    }
+6.  //Assume these could have any value:
+    int weekday = 5;
+    boolean holiday = false;    
+    // using if and switch  
+    if (!holiday){
+        switch (weekday){
+            case 1: System.out.println("Wake up at 7:00");
+            break;
+            case 2: System.out.println("Wake up at 7:00");
+            break;
+            case 3: System.out.println("Wake up at 7:00");
+            break;
+            case 4: System.out.println("Wake up at 7:00");
+            break;  
+            case 5: System.out.println("Wake up at 7:00");
+            break; 
+            default : System.out.println("Sleep in!);
+            break;      
+            }
+    } else {
+         System.out.println("Sleep in!);
+    }
+
+    // only if
+    if (weekday>=1 && weekday <=5 && !holiday){
+        System.out.println("Wake up at 7.00");
+    } else {
+        System.out.println("Sleep in!);
+    }
+
+
+7.  double playbackPosition = 120;
+    boolean rewinding = true;
+    if (rewinding) {
+    double rewindAmount = 0.1;
+   
+    playbackPosition = playbackPosition - rewindAmount; }
+
+
+8.  int dayOfWeek = 1;
+    String schedule;
+
+    Switch (dayOfWeek){
+        case 1: schedule = "go work";
+            break;
+        case 2: schedule = "go to gym after work";
+            break;
+        case 3: schedule = "Game night after work";
+            break;
+        case 4: schedule = " Wash kids";
+            break;
+        case 5: schedule = " clean whole home";
+            break;
+        case 6: case 7: 
+        default : schedule = "Find time for family , and relax";
+            break;
+    }
+
