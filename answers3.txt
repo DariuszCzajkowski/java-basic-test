@@ -1,0 +1,63 @@
+1.  B.
+2.  public boolean isPrime(int number){}
+3.  A
+4.  public double absoluteValue(double number){
+    if (number<0){
+    return -number;
+    } else {
+    return number;
+    }
+
+    }
+
+5. public double calculateTip(double cost){
+    double tip = cost*0.15;
+    return tip;
+    }
+
+6.  public String nametagText(String name){
+     String sentense "Hello, my name is " + name;
+     return sentense;
+    }
+
+    /**
+    * function change temperature from fahrenheit to celsius
+    *  @param fahrenheitTemp numbers of degrees
+    *  @return temperature in celsius
+    */
+7.  public double fahrenheitToCelsius(double fahrenheitTemp){
+        double celsiusTemp = (fahrenheitTemp-32)*5/9;
+        return celsiusTemp;
+    }
+
+
+    //function print temp in both way fahrenheit and celsius
+
+    public void printTemperature(double fahrenheitTemp){
+        System.out.println( "F: " + fahrenheitTemp);
+        System.out.println( "C: " + fahrenheitToCelsius(fahrenheitTemp));
+    }
+
+8.  
+    public int rolling(int diceSides){ 
+            double roll1= Math.random();
+                roll1= roll1*diceSides;
+                roll1= roll1+1;
+                 int roll= (int) roll1;   
+        return roll;         
+        }
+    public int monopolyRoll(){
+        int dice1= rolling(6);
+        int dice2= rolling(6);
+        if (dice1== dice2){
+            int diceRoll1= rolling(6);
+            int diceRoll2= rolling(6);
+            int sum = dice1+dice2+diceRoll1+diceRoll2;
+            return sum;
+        } else {
+            int sum= roll1+roll2;
+            return sum;
+        }
+    
+    }
+}
